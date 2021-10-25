@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="main">
+        <img class="burger" src="./assets/burger.png" alt="Menu icon">
+        <img class="navlogo" src="./assets/logo.png" alt="logo">
+
+        <div class="searchbox">
+            <input type="search" name="" placeholder="Search...">
+        </div>
+
+        <div class="user">
+            <img class="userupload" src="./assets/u_upload.png" alt="Upload btn">
+            <p id="links" class="upload">Upload</p>
+            <img class="usernotification" src="./assets/u_notif.png" alt="Notifications btn" id="links">
+            <img class="usermessages" src="./assets/u_mess.png" alt="Messages btn" id="links">
+            <img class="usercollections" src="./assets/u_likes.png" alt="Collections btn" id="links">
+
+        </div>
+
+    </nav>
+
+    <div class="container mt-5">
+        <div class="modal" id="myModal">
+            <div class="modal-dialog mw-100 w-75">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="posttitle">null</h5>
+                        <img class="usericon" src="./assets/user.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="Postimg" id="postImg" src="./assets/posts/squid game doll spinning head.webp">
+
+                        <p id="postCost">null</p>
+                        <p id="postViews">null</p>
+                        <p id="postDownloads">null</p>
+
+                        <button class="btn btn-success btn-lg btn-block">Download</button>
+                        <button class="btn btn-secondary">Like</button>
+                        <button class="btn btn-secondary">Save to collection</button>
+                        <button class="btn btn-secondary">Share</button>
+
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Comments</label>
+                                <input type="text" placeholder="Leave a comment..." class="form-control">
+
+                                <div class="postComments">
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Posts">
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >
+                <img class="cover" src="./assets/posts/3d paper mario diorama.webp" onclick="Showpostinfo(0,src);">
+                <p class="title">Smarthphone Stabilizer</p>
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/anubis mask.jpg" onclick="Showpostinfo(1,src);">
+                <p class="title">Polar bear Automata</p>
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >
+                <img class="cover" src="./assets/posts/artichoke lamp.jpg" onclick="Showpostinfo(2,src);">
+                <p class="title">Long cat</p>
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/atiendo boludos bust.png" onclick="Showpostinfo(3,src);">
+                <p class="title">baby doge</p>
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/batman signal led lamp.webp" onclick="Showpostinfo(4,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/bear coin bank.webp" onclick="Showpostinfo(5,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/big chungus.webp" onclick="Showpostinfo(6,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/bmo adventure time.webp" onclick="Showpostinfo(7,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/bone fingers.webp" onclick="Showpostinfo(8,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/cereal dispenser.webp" onclick="Showpostinfo(9,src);">
+            </div>
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/cheems bonk.webp" onclick="Showpostinfo(10,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/collapsible sword.webp" onclick="Showpostinfo(11,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/darth vader face mask.webp" onclick="Showpostinfo(12,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/death stranding lamp.webp" onclick="Showpostinfo(13,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/diorama digimon - tai and wargreymon.jpg" onclick="Showpostinfo(14,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/doge keychain.webp" onclick="Showpostinfo(15,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/double spring catapult.webp" onclick="Showpostinfo(16,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/eddie iron maiden.jpg" onclick="Showpostinfo(17,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/eevee.webp" onclick="Showpostinfo(18,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/flexi articulated skeleton.webp" onclick="Showpostinfo(19,src);">
+            </div>
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/folding leaf bowl.webp" onclick="Showpostinfo(20,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/fractal vise.webp" onclick="Showpostinfo(21,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/gear vs chain.webp" onclick="Showpostinfo(22,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/gearbox.webp" onclick="Showpostinfo(23,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/gift box.webp" onclick="Showpostinfo(24,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/greymon.webp" onclick="Showpostinfo(25,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/han solo blaster.webp" onclick="Showpostinfo(26,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/jack frost figure.webp" onclick="Showpostinfo(27,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/khe bergas cookie cutter.webp" onclick="Showpostinfo(28,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/lazy cat.webp" onclick="Showpostinfo(29,src);">
+            </div>
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/machine gun stock battery.webp" onclick="Showpostinfo(30,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/manual turntable.webp" onclick="Showpostinfo(31,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/messirve.webp" onclick="Showpostinfo(32,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/michael myers - halloween.webp" onclick="Showpostinfo(33,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/nemesis T type - RE3.webp" onclick="Showpostinfo(34,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/nintendo switch joy-con grip.webp" onclick="Showpostinfo(35,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/owl wall key holder.webp" onclick="Showpostinfo(36,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/poison ivy - dc.webp" onclick="Showpostinfo(37,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/pokeball switch cartridge case.jpg" onclick="Showpostinfo(38,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/polar bear with seal [automata].webp" onclick="Showpostinfo(39,src);">
+            </div>
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/red chin.jpg" onclick="Showpostinfo(40,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/retro cassete document card holder.webp" onclick="Showpostinfo(41,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/rotating lithophane lamp.webp" onclick="Showpostinfo(42,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/rubber band gun v2.webp" onclick="Showpostinfo(43,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/scissor paint rack.webp" onclick="Showpostinfo(44,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/sd card toaster.webp" onclick="Showpostinfo(45,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/sephiroth statue.jpg" onclick="Showpostinfo(46,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/silent hill nurse.jpg" onclick="Showpostinfo(47,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/sims keychan.webp" onclick="Showpostinfo(48,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/slipknot mask.webp" onclick="Showpostinfo(49,src);">
+            </div>
+
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/squid game doll spinning head.webp" onclick="Showpostinfo(50,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/star wars inspired mech arm.jpg" onclick="Showpostinfo(51,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/ufo abduction lamp with blinking lights.webp" onclick="Showpostinfo(52,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/universal phone holder.webp" onclick="Showpostinfo(53,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/venom bust.jpg" onclick="Showpostinfo(54,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/vhs tape dispenser.webp" onclick="Showpostinfo(55,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/we bare bears.webp" onclick="Showpostinfo(56,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/willies simpsons.jpg" onclick="Showpostinfo(57,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/yu-gi-oh millennium puzzle.webp" onclick="Showpostinfo(58,src);">
+            </div>
+            <div class="product" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="cover" src="./assets/posts/zombie deadpool.jpg" onclick="Showpostinfo(59,src);">
+            </div>
+        </div>
+    </div>
+
+    <img class="topbutton" src="./assets/top.png" onclick="Scrolltotop();">
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="./index.js"></script>
+
+
+</html>
