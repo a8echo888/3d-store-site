@@ -4,7 +4,7 @@ img.img-fluid{
 }
 
 body{
-    background-color: rgb(204, 27, 27);
+    background-color: rgb(139, 139, 139);
     margin: 0;
 }
 
@@ -103,7 +103,7 @@ display: none;
         padding: 2%;
         flex-grow: 0;
         flex-basis: 21%;
-        max-width: 150px;
+        max-width: 130px;
         min-width: 100px;
     }
 
