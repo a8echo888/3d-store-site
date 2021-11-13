@@ -11,7 +11,14 @@ for (let index = 0; index < postCount; index++) {
 
  postsdownloads.push(Math.floor(postDownloads));
  postsviews.push(Math.floor(randomIntFromInterval(postDownloads, 3000)));
- postscost.push(randomIntFromInterval(0, 4));
+
+ let randomprice = randomIntFromInterval(0, 4);
+ if(randomprice>1){
+  postscost.push(randomprice + "$");
+ }
+ else{
+  postscost.push("Free");
+ }
 }
 
 
@@ -27,7 +34,7 @@ function randomIntFromInterval(min, max) { // min and max included
 function Showpostinfo(postnumber,postimgsource){ // get clicked img src & postn°. assign random values
   document.getElementById("postViews").textContent = postsviews[postnumber] + " views";
   document.getElementById("postDownloads").textContent = postsdownloads[postnumber] + " downloads";
-  document.getElementById("postCost").textContent = postscost[postnumber] + "$";
+  document.getElementById("postCost").textContent = postscost[postnumber];
 
   document.getElementById("postImg").src = postimgsource;
   document.getElementById("posttitle").textContent = convertText(postimgsource);;
