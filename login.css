@@ -286,6 +286,45 @@ opacity: 1;
 
 @media screen and (max-width: 479px){
 
+/*contact*/
+
+.container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container button{
+margin-left: 12%;
+font-size: 1.5em;
+}
+
+.container .login{
+width: 80%;
+padding-left: 10%;
+padding-bottom: 3%;
+}
+.container .signin{
+display: none;
+width: 80%;
+padding-left: 10%;
+padding-bottom: 3%;
+}
+
+.container p{
+    font-size: 1.2em;
+    }
+
+.container input{
+    display: block;
+    }
+.container.ckecklog{
+    display: flex;
+    }
+
+
+
+/*contactend*/
+
     .modal-content{
         margin-left: 15%;
         }
