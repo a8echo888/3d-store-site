@@ -10,43 +10,8 @@ body{
     width: 100%;
 }
 
-/*carousel----------------------------------------------------------------------------------------*/
 
-.carousel{
-    width: 100%;
-border-radius: 13px;
-overflow: hidden;
-}
-
-.carousel .carousel-indicators button{
-top: 50%;
-    width: 10px;
-  height: 10px;
-    border-radius: 50%;
-}
-
-#carouselExampleInterval{
-    margin-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    width: 80%;
-}
-
-#carouselExampleInterval .carousel-item{
-    height: 220px;
-}
-
-.carousel-item img {
-    height: 220px;
-    border-radius: 15px;
-}
-
-/*nav----------------------------------------------------------------------------------------*/
-.mycontainer .signin{
-
-    display: none;
-}
+/*contact----------------------------------------------------------------------------------------*/
 
 /*nav----------------------------------------------------------------------------------------*/
 nav.main{
@@ -71,7 +36,10 @@ display: none;
     position: relative;
     height: 1.5em;
     border-radius: 8px;
+}
 
+.main button{
+    cursor: pointer;
 }
 
 .searchbox {
@@ -131,8 +99,10 @@ color: rgb(30, 199, 30);
     box-shadow: -1px -1px 28px -1px rgba(0,0,0,1);
          margin-left: 15%;
     margin-right: 15%;
-    padding-top: 2%;
-margin-bottom: 7%;
+    padding-top: 1.5%;
+    padding-bottom: 2.5%;
+    margin-top: 3%;
+margin-bottom: 3%;
     width: 70%;
 }
 
@@ -207,66 +177,57 @@ opacity: 1;
 @media screen and (max-width: 588px){
 
 /*contact*/
-
-.mycontainer{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 60%;
+.mycontainer .content{
+    width: 75%;
+    margin-left: 12%;
 }
 
-.mycontainer button{
-margin-left: 12%;
-font-size: 1.5em;
-}
-
-.mycontainer .login{
-width: 80%;
-padding-left: 10%;
-padding-bottom: 3%;
-}
-.mycontainer .signin{
-width: 80%;
-padding-left: 10%;
-padding-bottom: 3%;
-}
-
-.mycontainer p{
-    font-size: 1.2em;
-    }
-
-.mycontainer input{
-    display: block;
-    }
-.mycontainer.ckecklog{
+.mycontainer .content p{
     display: inline-block;
-    vertical-align: middle;
+    font-size: 1em;
+}
+
+.mycontainer .content h2{
+    margin-left: 30%;
+    color: rgb(66, 224, 52);
+
     }
 
+.mycontainer .content .form1 .name{
+    margin-left: 3%;
+width: 42%;
+height: 20px;
+}
+
+.mycontainer .content .title1{
+    margin-left: 9%;
+    }
+
+.mycontainer .content .form1 .email{
+    width: 42%;
+    height: 20px;
+    margin-left: 2%;
+    }
+
+    .mycontainer .content .title2{
+        margin-left: 37.5%;
+        }
+
+    .mycontainer .content .message{
+        line-height: 1.5em;
+        margin-left: 3%;
+        margin-top: 1%;
+        width: 92%;
+        height: 250px;
+        }
+        .mycontainer .content button{
+            margin-left: 38%;
+            margin-top: 1%;
+            }
 
 
 /*contactend*/
 
-    /* carrousel---------------------------------------------------*/
-    
-    .carousel .carousel-indicators button{
-        display: none;
-    }
-    
-    #carouselExampleInterval{
-        margin-bottom: 20px;
-        margin-left: 4%;
-        margin-right: 4%;
-        width: 92%;
-    }
-
-    #carouselExampleInterval .carousel-item{
-        height: 100px;
-    }
-    
-    .carousel-item img {
-        height: 100px;
-        border-radius: 8px;
-    }
 
     /* nav---------------------------------------------------*/
 
@@ -334,73 +295,59 @@ padding-bottom: 3%;
         width: 100%;
     }
 }
-@media screen and (max-width: 589px)and (min-width: 768px){
+@media screen and (min-width: 589px)and (max-width: 768px){
 
 /*contact*/
-
-.mycontainer{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 60%;
+.mycontainer .content{
+    width: 75%;
+    margin-left: 12%;
 }
 
-
-.mycontainer .buttons{
-    margin-left: 41%;
-    }
-
-.mycontainer button{
-margin-left: 3%;
-font-size: 1.5em;
-}
-
-.mycontainer .login{
-width: 50%;
-margin-left: 30%;
-padding-bottom: 3%;
-}
-.mycontainer .signin{
-width: 50%;
-padding-left: 30%;
-padding-bottom: 3%;
-}
-
-.mycontainer p{
-    font-size: 1.4em;
-    }
-
-.mycontainer input{
-    display: block;
-    width: 80%;
-    height: 20px;
-    }
-.mycontainer.ckecklog{
+.mycontainer .content p{
     display: inline-block;
-    vertical-align: middle;
+    font-size: 1.4em;
+}
+
+.mycontainer .content h2{
+    margin-left: 35%;
+    color: rgb(66, 224, 52);
+
     }
 
+.mycontainer .content .form1 .name{
+    margin-left: 9%;
+width: 40%;
+height: 20px;
+}
 
+.mycontainer .content .title1{
+    margin-left: 9%;
+    }
+
+.mycontainer .content .form1 .email{
+    width: 40%;
+    height: 20px;
+    margin-left: 2%;
+    }
+
+    .mycontainer .content .title2{
+        margin-left: 37.5%;
+        }
+
+    .mycontainer .content .message{
+        line-height: 1.5em;
+        margin-left: 9%;
+        margin-top: 1%;
+        width: 85%;
+        height: 250px;
+        }
+        .mycontainer .content button{
+            margin-left: 48%;
+            margin-top: 1%;
+            }
 
 /*contactend*/
 
-    /* carrousel---------------------------------------------------*/
-    
-    
-    #carouselExampleInterval{
-        margin-bottom: 20px;
-        margin-left: 4%;
-        margin-right: 4%;
-        width: 92%;
-    }
-
-    #carouselExampleInterval .carousel-item{
-        height: 150px;
-    }
-    
-    .carousel-item img {
-        height: 150px;
-        border-radius: 8px;
-    }
 
     /* general---------------------------------------------------*/
     body{
@@ -483,48 +430,53 @@ padding-bottom: 3%;
 
 
 /*contact*/
-
-.mycontainer{
-    margin-top: 5%;
-    margin-bottom: 5%;
+.mycontainer .content{
+    width: 75%;
+    margin-left: 12%;
 }
 
-
-.mycontainer .buttons{
-    margin-left: 41%;
-    }
-
-.mycontainer button{
-margin-left: 3%;
-font-size: 1.5em;
-}
-
-.mycontainer .login{
-width: 50%;
-margin-left: 30%;
-padding-bottom: 3%;
-}
-
-.mycontainer input{
-    width: 80%;
-    height: 20px;
-    }
-
-.mycontainer .signin{
-width: 50%;
-padding-left: 30%;
-padding-bottom: 3%;
-}
-
-.mycontainer p{
-    font-size: 1.4em;
-    }
-
-.mycontainer.ckecklog{
+.mycontainer .content p{
     display: inline-block;
-    vertical-align: middle;
+    font-size: 1.4em;
+}
+
+.mycontainer .content h2{
+    margin-left: 42%;
+    color: rgb(66, 224, 52);
+
     }
 
+.mycontainer .content .form1 .name{
+    margin-left: 9%;
+width: 40%;
+height: 20px;
+}
+
+.mycontainer .content .title1{
+    margin-left: 9%;
+    }
+
+.mycontainer .content .form1 .email{
+    width: 40%;
+    height: 20px;
+    margin-left: 2%;
+    }
+
+    .mycontainer .content .title2{
+        margin-left: 37.5%;
+        }
+
+    .mycontainer .content .message{
+        line-height: 1.5em;
+        margin-left: 9%;
+        margin-top: 1%;
+        width: 83.2%;
+        height: 250px;
+        }
+        .mycontainer .content button{
+            margin-left: 48%;
+            margin-top: 1%;
+            }
 
 
 /*contactend*/
@@ -554,13 +506,6 @@ padding-bottom: 3%;
     margin-top: 20px;
     margin-left: 30px;
 }
-
-
-
-    .topbutton{
-        bottom:2%;
-        left: 95%;
-    }
 
 
     footer .cont{
